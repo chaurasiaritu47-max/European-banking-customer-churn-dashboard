@@ -77,7 +77,7 @@ h2{
     border-radius: 8px !important;
     border: none !important;
     padding: 6px 12px !important;
-    margin-left: 50px !important;
+    margin-left: 60px !important;
 }
             
 /* Hover effect for sidebar buttons */
@@ -259,7 +259,7 @@ unsafe_allow_html=True
 )
 
 
-st.sidebar.markdown("<h2 style='color:#e1bd78;font-size: 16px;margin-left: 150px;'>📥 Export Data</h2>", unsafe_allow_html=True)
+st.sidebar.markdown("<h2 style='color:#e1bd78;font-size: 16px;margin-left: 60px;'>📥 Export Data</h2>", unsafe_allow_html=True)
 
 st.sidebar.download_button(
 "Download Data",
