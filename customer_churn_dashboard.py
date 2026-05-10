@@ -7,7 +7,7 @@ import seaborn as sns
 import plotly.express as px
 import plotly.graph_objects as go
 # Load the cleaned dataset
-df = pd.read_csv("D:/python/unified fourth project/European_Bank_Cleaned.csv")
+df = pd.read_csv("European_Bank_Cleaned.csv")
 
 st.markdown("""<style>
 .stApp {
