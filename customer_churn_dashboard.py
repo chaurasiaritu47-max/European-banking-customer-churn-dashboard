@@ -15,9 +15,11 @@ st.markdown("""<style>
 }
 [data-testid="stSidebar"] {
     background-color: #4e124a;
-    overflow: hidden !important;
 }
-
+section[data-testid="stSidebar"] > div {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 [data-testid="stSidebar"] *{
     color: #40d2d7 ;
 }
