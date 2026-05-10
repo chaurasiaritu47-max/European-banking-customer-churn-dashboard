@@ -53,7 +53,6 @@ div[data-baseweb="select"] > div {
 }
 /* # h2 used for section titles */
 h2{           
-    color: #87d3e1;   
     font-size: 28px;
     font-weight: 400;   
 }
@@ -194,7 +193,7 @@ engagement_drop = engagement.get(0, 0) - engagement.get(1, 0)
 
 
 
-st.markdown("<h2 style='color:#e1bd78;'>🗺️ Risk Indicators</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='color:#87d3e1;'>🗺️ Risk Indicators</h2>", unsafe_allow_html=True)
 
 col1, col2 = st.columns(2)
 
@@ -269,7 +268,7 @@ file_name="churn_data.csv"
 
 
 
-st.markdown("<h2 style='color:#e1bd78;'> 📊 Overall Churn Distribution & Correlation</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='color:#87d3e1;'> 📊 Overall Churn Distribution & Correlation</h2>", unsafe_allow_html=True)
 col1, col2 = st.columns(2)
 churn_counts = filtered_df['Exited'].value_counts().reset_index()
 churn_counts.columns = ['Exited', 'Count']
@@ -300,7 +299,7 @@ col2.plotly_chart(fig2, use_container_width=True)
 
 
 
-st.markdown("<h2 style='color:#e1bd78;'> 👥 Age & Tenure Churn Comparison</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='color:#87d3e1;'> 👥 Age & Tenure Churn Comparison</h2>", unsafe_allow_html=True)
 col3, col4 = st.columns(2)
 # Age chart
 age_churn = filtered_df.groupby('Age_Group')['Exited'].mean().reset_index()
@@ -327,7 +326,7 @@ col4.plotly_chart(fig4, use_container_width=True)
 
 
 
-st.markdown("<h2 style='color:#e1bd78;'>📈 Area & Product-Based Churn Analysis</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='color:#87d3e1;'>📈 Area & Product-Based Churn Analysis</h2>", unsafe_allow_html=True)
 col5, col6 = st.columns(2)
 
 geo_churn = {
@@ -367,7 +366,7 @@ col6.plotly_chart(fig6, use_container_width=True)
 
 col7 = st.columns(1)
 
-st.markdown("<h2 style='color:#e1bd78;'>💰 High-Value Customer Churn</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='color:#87d3e1;'>💰 High-Value Customer Churn</h2>", unsafe_allow_html=True)
 # Check if High-balance data exists after filtering
 high_value = filtered_df[filtered_df['Balance_Group'] == 'High-balance']
 
