@@ -77,7 +77,7 @@ h2{
     border-radius: 8px !important;
     border: none !important;
     padding: 6px 12px !important;
-    margin-left: 100px !important;
+    margin-left: 50px !important;
 }
             
 /* Hover effect for sidebar buttons */
