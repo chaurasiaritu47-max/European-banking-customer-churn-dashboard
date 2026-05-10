@@ -212,8 +212,9 @@ st.markdown("<p style='color:#87d3e1; font-size: 20px; font-weight: 500;'>📍 K
 col1, col2, col3 = st.columns(3)
 col1.metric("Overall Churn Rate", f"{overall_churn_rate:.2%}" )
 col2.metric("High-Value Churn", f"{high_value_churn:.2%}" if pd.notnull(high_value_churn) else "0%")
-col3.metric("Segment Churn", f"{segment_churn_rate[0]:.2%}" if pd.notnull(segment_churn_rate[0]) else "0%")
+segment_value = segment_churn_rate.iloc[0] if not segment_churn_rate.empty else 0
 
+col3.metric("Segment Churn", f"{segment_value:.2%}")
 
 with st.expander("📘 KPI Explanation"):
     st.markdown("""<div style='color: #CFD75D; font-size: 16px;'>
