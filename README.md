@@ -1,4 +1,5 @@
-**title: Customer Segmentation & Churn Pattern Analytics In European Banking**
+# Title: Customer Segmentation & Churn Pattern Analytics In European Banking
 This project is an interactive customer churn analysis dashboard developed using Python, Streamlit, Pandas, NumPy, and Plotly. The dashboard analyzes customer churn patterns in a European bank dataset and helps identify high-risk customer segments based on factors such as age, geography, balance, tenure, product usage, and customer activity. Dynamic filters and interactive visualizations allow users to explore churn trends and customer behavior in real time.
+
 The dashboard includes important business KPIs such as Overall Churn Rate, High-Value Churn, Segment Churn, Geographic Risk Index, and Engagement Drop Indicator. Additional features like downloadable filtered datasets, reset filters, KPI explanation expanders, and a customized dark-themed UI improve usability and user experience. This project demonstrates how interactive data analytics dashboards can support business decision-making and customer retention strategies in the banking sector.
 live app link: https://european-banking-customer-churn-dashboard-keufi4agsrvitiijvfws.streamlit.app/
